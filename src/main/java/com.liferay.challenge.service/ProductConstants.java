@@ -10,4 +10,10 @@ public class ProductConstants {
 
     public static final String PRODUCT_ENTRY_TYPE_BOOK = "book";
 
+    public static final String PRODUCT_ENTRY_TYPE_MUSIC = "cd";
+
+    public static final boolean PRODUCT_IMPORTED = true;
+
+
+
 }

@@ -12,7 +12,7 @@ public abstract class Product {
         this.price = price;
 
     }
-    public  Product(int quantity, double price, String type, boolean imported){
+    public Product(int quantity, double price, String type, boolean imported){
         this.quantity = quantity;
         this.price = price;
         this.type = type;
