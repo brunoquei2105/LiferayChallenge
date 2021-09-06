@@ -7,7 +7,8 @@ import java.util.Objects;
 
 public class ProducTypeValidator {
 
-    public static void ValidatorType(Product product){
+
+    public static void validatorType(Product product){
         if (Objects.equals(product.getName(), ProductConstants.PRODUCT_ENTRY_TYPE_BOOK)){
                product.setType(ProductConstants.PRODUCT_ENTRY_TYPE_BOOK);
         }
@@ -24,8 +25,4 @@ public class ProducTypeValidator {
             product.setType(ProductConstants.PRODUCT_ENTRY_TYPE_MEDICINE);
         }
     }
-
-
-
-
 }

@@ -1,6 +1,6 @@
 package com.liferay.challenge.service;
 
-import com.liferay.challenge.api.model.Product;
+
 import com.liferay.challenge.service.Constants.ProductTaxConstant;
 
 public class ProductPricePlusTaxCalculator {
