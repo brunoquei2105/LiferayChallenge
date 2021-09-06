@@ -1,7 +1,16 @@
 # LiferayChallenge
 ### This is a challenge for Associate Developer.
-##### This project was made using the architecture pattern Model-View-Controller(MVC) in the eclipse enterprise as a web dynamic projet.
+##### This project was made using the architecture pattern Model-View-Controller(MVC).
 
-Language: java1.8
+*Used Tools:*
 
-Server: apache.tomcat-9.0.51
+DataBase: MySql 8.0 
+
+Language: java 1.8
+
+Persistence: Java JDBC
+
+Junit 
+
+The solution was tried regards the S.O.L.I.D principles.
+
