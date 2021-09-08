@@ -5,6 +5,7 @@ import com.liferay.challenge.service.Constants.ProductTaxConstant;
 
 public class ProductPricePlusTaxCalculator {
 
+
     public static double pricePlusBasicTax(double price){
        return price* ProductTaxConstant.PRICE_PLUS_BASIC_TAX;
     }
