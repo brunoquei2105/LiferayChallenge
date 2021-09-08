@@ -7,6 +7,8 @@ public class ProductTaxConstant {
 
     public static final double EMPTY_TAX = 0.0;
 
+    public static final double PRODUCT_FREE_TAX = 0.0;
+
     public static final double BASIC_TAX = 0.1;
 
     public static final double IMPORTED_TAX = 0.05;

@@ -7,6 +7,7 @@ import com.liferay.challenge.api.persistence.ConnectionFactory;
 import com.liferay.challenge.service.Constants.ProductConstants;
 import com.liferay.challenge.service.Constants.ProductTaxConstant;
 import com.liferay.challenge.service.ProducTypeValidator;
+import com.liferay.challenge.service.ProductPricePlusTaxCalculator;
 
 import java.sql.SQLException;
 import java.util.*;
@@ -41,8 +42,8 @@ public class Input2View {
         double price = input.nextDouble();
         product.setPrice(price);
         double chocolateTax = product.getPrice() * ProductTaxConstant.IMPORTED_TAX;
-        double chocolateWithTax = product.getPrice() * ProductTaxConstant.PRICE_PLUS_IMPORTED_TAX;
-
+        double chocolateWithTax = ProductPricePlusTaxCalculator.pricePlusImportedTax(price);
+        product.setPrice(chocolateWithTax);
         productCar.add(product);
 
         System.out.print("Enter Product Name: ");
@@ -61,8 +62,8 @@ public class Input2View {
         double price2 = input.nextDouble();
         product.setPrice(price2);
         double perfumeTax = product.getPrice() * ProductTaxConstant.IMPORTED_COSMETIC_MUSIC_TAX;
-        double perfumeWithTax = product.getPrice() * ProductTaxConstant.PRICE_PLUS_IMPORTED_AND_BASIC_TAX;
-
+        double perfumeWithTax = ProductPricePlusTaxCalculator.pricePlusImportedBasicTax(price2);
+        product.setPrice(perfumeWithTax);
         productCar.add(product);
 
         double totalTax = chocolateTax + perfumeTax;

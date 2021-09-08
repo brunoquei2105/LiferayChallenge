@@ -17,4 +17,8 @@ public class ProductPricePlusTaxCalculator {
         return price * ProductTaxConstant.PRICE_PLUS_IMPORTED_AND_BASIC_TAX;
    }
 
+   public static double priceWithFreeTax(double price){
+        return price;
+   }
+
 }

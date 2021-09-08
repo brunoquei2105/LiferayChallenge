@@ -4,7 +4,7 @@ public class ProductConstants {
 
     public static final String PRODUCT_ENTRY_TYPE_FOOD = "chocolate";
 
-    public static final String PRODUCT_ENTRY_TYPE_MEDICINE = "medicine";
+    public static final String PRODUCT_ENTRY_TYPE_MEDICINE = "pill";
 
     public static final String PRODUCT_ENTRY_TYPE_COSMETIC = "perfume";
 
@@ -17,8 +17,5 @@ public class ProductConstants {
     public static final String PRODUCT_NOT_IMPORTED = "false";
 
     public static final double EMPTY_CAR = 0.0;
-
-
-
 
 }

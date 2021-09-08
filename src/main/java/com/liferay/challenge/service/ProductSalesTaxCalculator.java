@@ -43,7 +43,7 @@ public class ProductSalesTaxCalculator {
                 (Objects.equals(product.getType(), ProductConstants.PRODUCT_ENTRY_TYPE_MUSIC) ||
                  Objects.equals(product.getType(), ProductConstants.PRODUCT_ENTRY_TYPE_COSMETIC))) {
 
-                totalBasicImportedSalesTax = Math.ceil(product.getPrice() * ProductTaxConstant.IMPORTED_COSMETIC_MUSIC_TAX);
+                totalBasicImportedSalesTax = product.getPrice() * ProductTaxConstant.IMPORTED_COSMETIC_MUSIC_TAX;
 
 
         }
