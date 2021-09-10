@@ -3,6 +3,7 @@ package com.liferay.challenge.api.persistence;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * @author: Bruno Queiroz.
@@ -23,7 +24,7 @@ public class ConnectionFactory {
         return null;
     }
 
-    public static void closeConnection(Connection connection){
+    public static void close(Connection connection){
         try {
             if (connection != null){
                 connection.close();
@@ -32,5 +33,18 @@ public class ConnectionFactory {
         catch (SQLException e){
             e.printStackTrace();
         }
+    }
+    public static void close(Connection connection, Statement statement){
+        close(connection);
+        try {
+            if (statement != null){
+                statement.close();
+            }
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+
+
     }
 }
