@@ -1,5 +1,9 @@
 package com.liferay.challenge.api.model;
 
+/**
+ * @author: Bruno Queiroz.
+ */
+
 public class ProductBuilder {
 
     private int quantity;

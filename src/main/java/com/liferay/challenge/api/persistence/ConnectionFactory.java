@@ -15,13 +15,22 @@ public class ConnectionFactory {
         String password = "12345Eja!";
 
         try {
-            Connection connection = DriverManager.getConnection(url, user, password);
-            System.out.println("Connection established with MySql 8.0 " + connection);
-            return connection;
+            return DriverManager.getConnection(url, user, password);
         }
         catch (SQLException e){
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static void closeConnection(Connection connection){
+        try {
+            if (connection != null){
+                connection.close();
+            }
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 }
